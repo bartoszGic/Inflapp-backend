@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = 'https://infla-app.vercel.app' || 5555;
+const port = 5555;
 let articles = [];
 
 app.use(cors());
