@@ -4,11 +4,11 @@ const app = express();
 const port = process.env.PORT || 5555;
 let articles = [];
 
-const corsOptions = {
-    origin: process.env.PORT,
-    optionsSuccessStatus: 200
-}
-app.use(cors(corsOptions));
+// const corsOptions = {
+//     origin: process.env.PORT,
+//     optionsSuccessStatus: 200
+// }
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
